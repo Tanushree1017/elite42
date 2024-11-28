@@ -3,30 +3,57 @@
   padding: 0;
 }
 
-ul {
-  list-style: none;
+ul.parent {
   display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
   background-color: grey;
+  padding: 5px;
 }
-
-ul {
-  display: flex;
-  justify-content: center;
+ul.parent li {
+  position: relative;
 }
-ul li a {
+ul.parent li a {
   padding: 10px;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   color: #fff;
+  cursor: pointer;
 }
-ul li a:hover {
+ul.parent li a:hover {
   color: red;
 }
-ul li a ul {
-  position: number;
+ul.parent li ul {
+  position: absolute;
   display: none;
   background-color: gray;
   width: 150px;
-  padding: 5px;
+  top: 24px;
+}
+ul.parent li:hover ul {
+  display: block;
+}
+
+.content .products li {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: #F0f0f0;
+}
+.content .products li button {
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  border: none;
+  background-color: gray;
+  color: #fff;
+  height: 24px;
+}
+.content .products li img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
 }/*# sourceMappingURL=style.css.map */
