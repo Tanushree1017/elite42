@@ -51,9 +51,11 @@ ul.parent li:hover ul {
   height: 24px;
 }
 .content .products li img {
-  width: 100px;
-  height: 100px;
   position: absolute;
-  bottom: 30px;
-  left: 50px;
+  bottom: 0;
+  width: 100%;
+  border: none;
+  background-color: gray;
+  color: #fff;
+  height: 14px;
 }/*# sourceMappingURL=style.css.map */
