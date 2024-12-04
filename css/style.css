@@ -1,21 +1,94 @@
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.parent {
-  width: 400px;
-  height: 300px;
-  background-color: grey;
+/* Full-screen Background */
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: url("background.jpg") no-repeat center center/cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Center the signup form */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   position: relative;
 }
 
-.child {
-  width: 100px;
-  height: 100px;
-  background-color: #fff;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+/* Form Styling */
+.signup-form {
+  background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* LinkedIn Logo */
+.linkedin-logo {
+  width: 80px; /* Adjust size of logo */
+  margin-bottom: 20px; /* Space between logo and the form */
+}
+
+/* Title */
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type=email],
+input[type=password] {
+  margin-bottom: 20px;
+}
+
+/* Signup Button */
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #0077b5;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #005e8c;
+}
+
+/* Terms and Conditions */
+.terms {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.terms a {
+  color: #0077b5;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
